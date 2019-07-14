@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#time {
+  color: white;
+  font-size: 22px;
+  margin-top: 150px;
+}
+
+#header2 {
+  font-size: 22px;
+  color: white;
+  border: 2px solid whitesmoke;
+  height: 40px;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px 5px;
+  margin-left: 100px;
+  width: 250px;
+}
+
+#header {
+  font-size: 22px;
+  color: white;
+  margin-left: 100px;
+  margin-top: 50px;
+  border: 2px solid whitesmoke;
+  height: 40px;
+  width: 250px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+body {
+  background: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60;");
+  height: 100vh;
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.memorygame {
+  width: 640px;
+  height: 640px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  perspective: 1000px;
+}
+.memorycard {
+  width: 25%;
+  height: 33.33%;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: 0.5s;
+}
+
+.memorycard:active {
+  transform: scale(0.97);
+  transition: 0.2s;
+}
+
+.front-face,
+.back-face {
+  position: absolute;
+  width: 150px;
+  height: 200px;
+  border-radius: 10px;
+  background: #1c7ccc;
+  backface-visibility: hidden;
+}
+
+.memorycard.flip {
+  transform: rotateY(180deg);
+}
+.front-face {
+  transform: rotateY(180deg);
+}
