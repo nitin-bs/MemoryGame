@@ -9,5 +9,5 @@ Click the right cards one after the other to get the right pair matched.
 There is a score card that displays the number of matches done so far.
 At the end,the amount of time taken by the user is displayed.
 
-See the live demo here:
+See the live demo here: https://nitin-bs.github.io/MemoryGame/
 
